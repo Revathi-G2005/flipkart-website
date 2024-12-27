@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Replica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="flipkart logo.png" alt="Flipkart Logo">
+            <small>Explore <span class="plus">Plus ✨</span></small>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for Products, Brands and More">
+            <button>🔍</button>
+        </div>
+        <div class="nav-links">
+            <div class="dropdown">
+                <button class="dropdown-toggle">Login ⬇</button>
+                <div class="dropdown-menu">
+                    <a href="login.html">My Profile</a>
+                    <a href="#">Flipkart Plus Zone</a>
+                    <a href="orders.html">Orders</a>
+                    <a href="wishlist.html">Wishlist</a>
+                    <a href="#">Rewards</a>
+                    <a href="#">Gift Cards</a>
+                </div>
+            </div>
+            <a href="cart.html"><button>Cart <span id="cart-count">(0)</span></button></a>
+            <a href="seller-page.html"><button>Seller Page </button></a>
+            
+        </div>
+    </header>
+
+    <!-- Category Section -->
+    <nav class="categories">
+        <a href="#">Grocery</a>
+        <a href="#">Mobiles</a>
+        <a href="#">Fashion</a>
+        <a href="#">Electronics</a>
+        <a href="#">Home & Furniture</a>
+        <a href="#">Appliances</a>
+        <a href="#">Beauty&Toys</a>
+        <a href="#">Two Wheelers</a>
+    </nav>
+
+    <!-- Banner Section -->
+    <div class="banner">
+        <img src="banner.png" alt="Main Banner">
+    </div>
+
+    <!-- Product Section -->
+    <section class="products">
+        <!-- Electronics Category -->
+        <h2>Best of Electronics</h2>
+        <div class="product-grid">
+            <div class="product">
+                <a href="product-details.html">
+                    <img src="smartphone.png" alt="Smartphone">
+                    <p>Smartphone</p>
+                    <p>₹999</p>
+                </a>
+                <div class="product-buttons">
+                    <button class="add-to-cart" data-product="Smartphone" data-price="999" data-img-src="smartphone.png">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+            <div class="product">
+                <a href="product-details.html">
+                    <img src="headphones.png" alt="Bluetooth Headphones">
+                    <p>Bluetooth Headphones</p>
+                    <p>₹1299</p>
+                </a>
+                <div class="product-buttons">
+                    <button class="add-to-cart" data-product="Bluetooth Headphones" data-price="1299" data-img-src="headphones.png">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+            <div class="product">
+                <a href="product-details.html">
+                    <img src="smartwatch.png" alt="Smartwatch">
+                    <p>Smartwatch</p>
+                    <p>₹2499</p>
+                </a>
+                <div class="product-buttons">
+                    <button class="add-to-cart" data-product="Smartwatch" data-price="2499" data-img-src="smartwatch.png">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+            <div class="product">
+                <a href="product-details.html">
+                    <img src="LED TV.png" alt="LED TV">
+                    <p>LED TV</p>
+                    <p>₹79999</p>
+                </a>
+                <div class="product-buttons">
+                    <button class="add-to-cart" data-product="LED TV" data-price="79999" data-img-src="LED TV.png">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fashion Category -->
+        <h2>Trendy Fashion</h2>
+        <div class="product-grid">
+            <div class="product">
+                <a href="product-details.html">
+                    <img src="tshirt.png" alt="T-shirt">
+                    <p>T-shirt</p>
+                    <p>₹499</p>
+                </a>
+                <div class="product-buttons">
+                    <button class="add-to-cart" data-product="T-shirt" data-price="499" data-img-src="tshirt.png">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+            <div class="product">
+                <a href="product-details.html">
+                    <img src="jeans.png" alt="Jeans">
+                    <p>Jeans</p>
+                    <p>₹1299</p>
+                </a>
+                <div class="product-buttons">
+                    <button class="add-to-cart" data-product="Jeans" data-price="1299" data-img-src="jeans.png">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+            <div class="product">
+                <a href="product-details.html">
+                    <img src="jacket.png" alt="Jacket">
+                    <p>Jacket</p>
+                    <p>₹2199</p>
+                </a>
+                <div class="product-buttons">
+                    <button class="add-to-cart" data-product="Jacket" data-price="2199" data-img-src="jacket.png">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+            <div class="product">
+                <a href="product-details.html">
+                    <img src="dress.png" alt="Dress">
+                    <p>Dress</p>
+                    <p>₹899</p>
+                </a>
+                <div class="product-buttons">
+                    <button class="add-to-cart" data-product="Dress" data-price="899" data-img-src="dress.png">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobiles Category -->
+        <h2>Latest Mobiles</h2>
+        <div class="product-grid">
+            <div class="product">
+                <a href="product-details.html">
+                    <img src="iphone.png" alt="iPhone 13">
+                    <p>iPhone 13</p>
+                    <p>₹69999</p>
+                </a>
+                <div class="product-buttons">
+                    <button class="add-to-cart" data-product="iPhone 13" data-price="69999" data-img-src="iphone.png">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+            <div class="product">
+                <a href="product-details.html">
+                    <img src="samsung.png" alt="Samsung Galaxy S21">
+                    <p>Samsung Galaxy S21</p>
+                    <p>₹59999</p>
+                </a>
+                <div class="product-buttons">
+                    <button class="add-to-cart" data-product="Samsung Galaxy" data-price="59999" data-img-src="samsung.png">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+            <div class="product">
+                <a href="product-details.html">
+                    <img src="oneplus.png" alt="OnePlus 9">
+                    <p>OnePlus 9</p>
+                    <p>₹49999</p>
+                </a>
+                <div class="product-buttons">
+                    <button class="add-to-cart" data-product="OnePlus" data-price="49999" data-img-src="oneplus.png">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+            <div class="product">
+                <a href="product-details.html">
+                    <img src="realme.png" alt="Realme 8">
+                    <p>Realme 8</p>
+                    <p>₹18999</p>
+                </a>
+                <div class="product-buttons">
+                    <button class="add-to-cart" data-product="Realme 8" data-price="18999" data-img-src="realme.png">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <h2>Fresh Grocery</h2>
+        <div class="product-grid">
+            <div class="product">
+                <a href="product-details.html">
+                    <img src="rice.png" alt="Product 1">
+                    <p>Rice (1kg)</p>
+                    <p>₹40</p>
+                </a>
+                <div class="product-buttons">
+                    <button class="add-to-cart" data-product="Rice" data-price="40" data-img-src="rice.png">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+            <div class="product">
+                <a href="product-details.html">
+                    <img src="tomato.png" alt="Product 2">
+                    <p>Tomatoes (500g)</p>
+                    <p>₹30</p>
+                </a>
+                <div class="product-buttons">
+                    <button class="add-to-cart" data-product="Tomatoes" data-price="30" data-img-src="tomato.png">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+            <div class="product">
+                <a href="product-details.html">
+                    <img src="potato.png" alt="Product 3">
+                    <p>Potatoes (1kg)</p>
+                    <p>₹35</p>
+                </a>
+                <div class="product-buttons">
+                    <button class="add-to-cart" data-product="Potatoes" data-price="35" data-img-src="potato.png">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+            <div class="product">
+                <a href="product-details.html">
+                    <img src="milk.png" alt="Product 4">
+                    <p>Milk (1L)</p>
+                    <p>₹45</p>
+                </a>
+                <div class="product-buttons">
+                    <button class="add-to-cart" data-product="Milk (1L)" data-price="45" data-img-src="milk.png">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <h2>Home & Furniture</h2>
+        <div class="product-grid">
+            <!-- Product Cards for Home & Furniture Category -->
+            <div class="product">
+                <a href="product-details.html">
+                    <img src="sofa.png" alt="Sofa Set">
+                    <p>Sofa Set</p>
+                    <p>₹15999</p>
+                </a>
+                <div class="product-buttons">
+                    <button class="add-to-cart" data-product="Sofa Set" data-price="15999" data-img-src="sofa.png">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+            <div class="product">
+                <a href="product-details.html">
+                    <img src="dining.png" alt="Dining Table">
+                    <p>Dining Table</p>
+                    <p>₹9999</p>
+                </a>
+                <div class="product-buttons">
+                    <button class="add-to-cart" data-product="Dining Table" data-price="9999" data-img-src="dining.png">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+            <div class="product">
+                <a href="product-details.html">
+                    <img src="cabinet.png" alt="Cabinet">
+                    <p>Cabinet</p>
+                    <p>₹7499</p>
+                </a>
+                <div class="product-buttons">
+                    <button class="add-to-cart" data-product="Cabinet" data-price="7499" data-img-src="cabinet.png">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+            <div class="product">
+                <a href="product-details.html">
+                    <img src="chair.png" alt="Chair">
+                    <p>Chair</p>
+                    <p>₹1299</p>
+                </a>
+                <div class="product-buttons">
+                    <button class="add-to-cart" data-product="Chair" data-price="1299" data-img-src="chair.png">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <h2>Appliances</h2>
+        <div class="product-grid">
+            <!-- Product Cards for Appliances Category -->
+            <div class="product">
+                <a href="product-details.html">
+                    <img src="washing.png" alt="Washing Machine">
+                    <p>Washing Machine</p>
+                    <p>₹18499</p>
+                </a>
+                <div class="product-buttons">
+                    <button class="add-to-cart" data-product="Washing Machine" data-price="18499" data-img-src="Washing.png">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+            <div class="product">
+                <a href="product-details.html">
+                    <img src="fridge.png" alt="Refrigerator">
+                    <p>Refrigerator</p>
+                    <p>₹25999</p>
+                </a>
+                <div class="product-buttons">
+                    <button class="add-to-cart" data-product="Refrigerator" data-price="25999" data-img-src="fridge.png">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+            <div class="product">
+                <a href="product-details.html">
+                    <img src="ac.png" alt="Air Conditioner">
+                    <p>Air Conditioner</p>
+                    <p>₹35999</p>
+                </a>
+                <div class="product-buttons">
+                    <button class="add-to-cart" data-product="Air Conditioner" data-price="35999" data-img-src="ac.png">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+            <div class="product">
+                <a href="product-details.html">
+                    <img src="microwave.png" alt="Microwave">
+                    <p>Microwave</p>
+                    <p>₹7299</p>
+                </a>
+                <div class="product-buttons">
+                    <button class="add-to-cart" data-product="Microwave" data-price="7299" data-img-src="microwave.png">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <h2>Beauty & Toys</h2>
+        <div class="product-grid">
+            <!-- Product Cards for Beauty & Toys Category -->
+            <div class="product">
+                <a href="product-details.html">
+                    <img src="makeup.png" alt="Makeup Kit">
+                    <p>Makeup Kit</p>
+                    <p>₹1299</p>
+                </a>
+                <div class="product-buttons">
+                    <button class="add-to-cart" data-product="Makeup Kit" data-price="1299" data-img-src="makeup.png">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+            <div class="product">
+                <a href="product-details.html">
+                    <img src="car.png" alt="Toy Car">
+                    <p>Toy Car</p>
+                    <p>₹499</p>
+                </a>
+                <div class="product-buttons">
+                    <button class="add-to-cart" data-product="Toy Car" data-price="499" data-img-src="car.png">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+            <div class="product">
+                <a href="product-details.html">
+                    <img src="doll.png" alt="Doll">
+                    <p>Doll</p>
+                    <p>₹799</p>
+                </a>
+                <div class="product-buttons">
+                    <button class="add-to-cart" data-product="Doll" data-price="799" data-img-src="doll.png">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+            <div class="product">
+                <a href="product-details.html">
+                    <img src="perfume.png" alt="Perfume">
+                    <p>Perfume</p>
+                    <p>₹999</p>
+                </a>
+                <div class="product-buttons">
+                    <button class="add-to-cart" data-product="Perfume" data-price="999" data-img-src="perfume.png">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <h2>Two Wheelers</h2>
+        <div class="product-grid">
+            <!-- Product Cards for Two Wheelers Category -->
+            <div class="product">
+                <a href="product-details.html">
+                    <img src="escooter.png" alt="Electric Scooter">
+                    <p>Electric Scooter</p>
+                    <p>₹45000</p>
+                </a>
+                <div class="product-buttons">
+                    <button class="add-to-cart" data-product="Electric Scooter" data-price="45000" data-img-src="escooter.png">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+            <div class="product">
+                <a href="product-details.html">
+                    <img src="bike.png" alt="Motorbike">
+                    <p>Motorbike</p>
+                    <p>₹120000</p>
+                </a>
+                <div class="product-buttons">
+                    <button class="add-to-cart" data-product="Motorbike" data-price="120000" data-img-src="bike.png">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+            <div class="product">
+                <a href="product-details.html">
+                    <img src="cycle.png" alt="Bicycle">
+                    <p>Bicycle</p>
+                    <p>₹5999</p>
+                </a>
+                <div class="product-buttons">
+                    <button class="add-to-cart" data-product="Bicycle" data-price="5999" data-img-src="cycle.png">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+            <div class="product">
+                <a href="product-details.html">
+                    <img src="motor.png" alt="Motor Scooter">
+                    <p>Motor Scooter</p>
+                    <p>₹75000</p>
+                </a>
+                <div class="product-buttons">
+                    <button class="add-to-cart" data-product="Motor Scooter" data-price="75000" data-img-src="motor.png">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  /* Styling for the BecomeSeller Component */
+  .become-seller {
+    padding: 20px;
+  }
+  
+  /* Add Product Form Section */
+  .become-seller .add-product {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .become-seller .add-product h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .become-seller .add-product label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .become-seller .add-product input,
+  .become-seller .add-product textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .become-seller .add-product button {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .become-seller .add-product button:hover {
+    background-color: #2ecc71;
+  }
+  
+  /* Product List Section */
+  .become-seller .product-list {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .become-seller .product-list h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .become-seller .product-list table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .become-seller .product-list th,
+  .become-seller .product-list td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .become-seller .product-list th {
+    background-color: #2c3e50;
+    color: white;
+  }
+  
+  .become-seller .product-list button {
+    background-color: #f39c12;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .become-seller .product-list button:hover {
+    background-color: #e67e22;
+  }
+  

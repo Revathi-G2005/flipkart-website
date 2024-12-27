@@ -1,0 +1,81 @@
+/* Categories Navigation Styles */
+.categories {
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+  gap: 15px; /* Space between items */
+  padding: 10px; /* Padding around the section */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent wrapping */
+  scroll-behavior: smooth; /* Smooth scrolling for better UX */
+}
+
+.categories a {
+  text-decoration: none; /* Remove underline from links */
+  font-size: 16px; /* Keep font size */
+  font-weight: 500; /* Medium weight for readability */
+  padding: 8px 15px; /* Padding for links */
+  text-align: center;
+  border-radius: 5px; /* Rounded corners */
+  color: blue;
+}
+
+.categories a:hover {
+  text-decoration: underline;
+  color: black; /* Change color on hover */
+}
+
+.categories a:active {
+  transform: scale(0.98); /* Slight scale-down on click */
+}
+
+.categories img {
+  width: 100px; /* Fixed width */
+  height: 100px; /* Fixed height */
+  object-fit: cover; /* Keep image proportions */
+  border-radius: 5px; /* Rounded corners for images */
+}
+
+@media (max-width: 768px) {
+  .categories {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Keep items in a single row */
+    padding: 5px 10px; /* Reduce padding for compact design */
+    scroll-behavior: smooth; /* Smooth scrolling for better UX */
+  }
+
+  .categories::-webkit-scrollbar {
+    height: 5px; /* Thin scrollbar for horizontal scroll */
+  }
+
+  .categories::-webkit-scrollbar-thumb {
+    background-color: #bbb; /* Subtle scrollbar color */
+    border-radius: 10px; /* Rounded scrollbar */
+  }
+
+  .categories::-webkit-scrollbar-track {
+    background: transparent; /* Transparent scrollbar track */
+  }
+
+  .categories a {
+    flex: 0 0 calc(30% - 10px); /* Width of each item */
+    display: inline-block; /* Prevent wrapping in mobile view */
+    text-align: center; /* Center-align text */
+    padding: 5px; /* Reduce padding inside the box */
+  }
+
+  .categories img {
+    width: 100%; /* Full width for the image */
+    height: 80px; /* Fixed height for images */
+    object-fit: cover; /* Ensure the image fits well */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 5px; /* Space between image and text */
+  }
+
+  .categories span {
+    font-size: 12px; /* Smaller text for visibility */
+    display: block; /* Ensure text appears below the image */
+    overflow: hidden; /* Handle long text */
+    text-overflow: ellipsis; /* Add ellipsis for overflow */
+    white-space: nowrap; /* Prevent wrapping */
+  }
+}

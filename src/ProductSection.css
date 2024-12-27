@@ -1,0 +1,164 @@
+/* General Styles for the Product Section */
+.products {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Larger gap between categories */
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+/* Individual Category Card Styles */
+.category {
+  background: #e3f2fd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Category Title */
+.category h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #333;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #f0f0f0;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Product List in Each Category */
+.product-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Individual Product Card */
+.product-item {
+  background-color: #fff;
+  border: 1px solid #bbdefb;
+  border-radius: 6px;
+  padding: 15px;
+  text-align: center;
+  flex: 1;
+  min-width: 220px;
+  max-width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+  transform: scale(1.05);
+}
+
+/* Product Image */
+.product-item img {
+  width: 200px;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+/* Product Name */
+.product-item p {
+  font-size: 1rem;
+  color: #555;
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+/* Product Price */
+.product-item .price {
+  font-size: 1rem;
+  color: #222;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Add to Cart and Buy Now Buttons */
+.product-item .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.add-to-cart,
+.buy-now {
+  flex: 1;
+  padding: 10px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.add-to-cart {
+  background-color: #ffeb3b;
+  color: #333;
+}
+
+.buy-now {
+  background-color: #4caf50;
+  color: white;
+}
+
+.add-to-cart:hover {
+  background-color: #fdd835;
+}
+
+.buy-now:hover {
+  background-color: #43a047;
+}
+
+@media (max-width: 768px) {
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 columns */
+    gap: 15px; /* Slightly reduce gap for better spacing */
+  }
+
+  .product-item {
+    max-width: none; /* Remove max-width so it fits in the grid */
+    min-width: auto; /* Allow item to fully adapt to grid layout */
+  }
+
+  .product-item img {
+    width: 100%; /* Ensure image spans the width of the container */
+    max-width: 150px; /* Set a fixed maximum width */
+    height: 120px; /* Fixed height */
+    object-fit: contain; /* Ensure the image fits within the dimensions */
+    margin: 0 auto; /* Center the image horizontally */
+    display: block; /* Ensure proper alignment in grid */
+  }
+
+  /* Adjust font size for smaller screens */
+  .category h2 {
+    font-size: 1.4rem; /* Slightly reduce font size */
+  }
+
+  .product-item p {
+    font-size: 0.9rem; /* Slightly smaller text */
+  }
+
+  .product-item .price {
+    font-size: 0.95rem; /* Adjust price text size */
+  }
+
+  /* Buttons alignment and size adjustments */
+  .product-item .buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 8px; /* Adjust gap between buttons */
+  }
+
+  .add-to-cart,
+  .buy-now {
+    flex: none; /* Remove flex stretching */
+    width: 100%; /* Make buttons full-width */
+    font-size: 0.85rem; /* Reduce font size for buttons */
+    padding: 8px; /* Adjust padding for smaller screens */
+  }
+}

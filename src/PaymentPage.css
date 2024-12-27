@@ -1,0 +1,74 @@
+.payment-page {
+    padding: 20px;
+    max-width: 600px;
+
+    margin: 40px auto;
+    font-family: Arial, sans-serif;
+    border: 2px solid #ccc; /* Add border around the entire page */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+  }
+  
+  .payment-page h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .payment-form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd; /* Border for the form */
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Light background for the form */
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  input,
+  select {
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-top: 5px; /* Slight margin at the top of inputs */
+  }
+  
+  input[type='tel'],
+  input[type='text'],
+  input[type='email'],
+  input[type='number'],
+  input[type='month'] {
+    margin-top: 5px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .submit-button {
+    background-color: #007bff;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  

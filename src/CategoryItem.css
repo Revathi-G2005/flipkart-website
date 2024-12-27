@@ -1,0 +1,100 @@
+.category-items {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .category-items h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .items-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 250px; /* Fixed width */
+    height: 380px; /* Fixed height for consistent item size */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure space between image, text, and button */
+  }
+  
+  .item img {
+  width: 100%; /* Full width */
+  height: 180px; /* Fixed height */
+  object-fit: contain; /* Ensure the entire image is visible */
+  margin-bottom: 15px;
+  border-radius: 8px; /* Keep the rounded corners */
+}
+
+  
+  .item h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+    overflow: hidden; /* Avoid text overflow if product names are too long */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .item p {
+    font-size: 1rem;
+    color: #888;
+    margin-bottom: 15px;
+    overflow: hidden; /* Avoid text overflow if price is too long */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .item button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .item button:hover {
+    background-color: #0056b3;
+  }
+  
+  .item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .items-list {
+      justify-content: space-evenly;
+    }
+    .item {
+      width: 220px; /* Slightly smaller on tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .category-items h2 {
+      font-size: 1.5rem;
+    }
+    .item {
+      width: 180px; /* Slightly smaller on mobile */
+      height: 350px; /* Adjust height for smaller screens */
+    }
+  }
+  

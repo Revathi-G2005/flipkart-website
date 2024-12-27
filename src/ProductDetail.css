@@ -1,0 +1,68 @@
+/* Product Detail Styles */
+.product-detail {
+  padding: 20px;
+  text-align: center;
+}
+
+.product-detail img {
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.product-detail h1 {
+  margin: 20px 0 10px;
+}
+
+.product-detail p {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.product-detail button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #2874f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product-detail button:hover {
+  background-color: #0056b3;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+  .product-detail {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 columns */
+    gap: 15px; /* Space between grid items */
+  }
+
+  .product-detail img {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    grid-column: span 2; /* Image spans across both columns */
+    margin-bottom: 15px; /* Add space below the image */
+  }
+
+  .product-detail h1 {
+    font-size: 1.5rem;
+    grid-column: span 2; /* Title spans across both columns */
+  }
+
+  .product-detail p {
+    font-size: 16px;
+    grid-column: span 2; /* Paragraph spans across both columns */
+  }
+
+  .product-detail button {
+    font-size: 14px;
+    padding: 8px 16px;
+    grid-column: span 2; /* Button spans across both columns */
+  }
+}
+
+  

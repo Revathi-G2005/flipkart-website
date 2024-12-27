@@ -1,0 +1,114 @@
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 20px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.footer-section {
+  width: 20%;
+}
+
+.footer-section h3 {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #ddd;
+}
+
+.footer-section ul li a:hover {
+  color: #fff;
+}
+
+.footer-social a {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #ddd;
+}
+
+.footer-social a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #444;
+  padding-top: 15px;
+}
+
+.footer-bottom-left p {
+  margin: 0;
+}
+
+.footer-bottom-right {
+  text-align: right;
+}
+
+.footer-icons {
+  margin-top: 10px;
+}
+
+.footer-icons img {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  /* On Mobile: Make the footer sections horizontal, one after another */
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribute space between sections */
+    gap: 10px; /* Space between each footer section */
+  }
+
+  .footer-section {
+    width: 48%; /* Make each section take up nearly half the width */
+    text-align: left; /* Align text to the left for better readability */
+  }
+
+  .footer-bottom {
+    flex-direction: column; /* Stack footer bottom items vertically on mobile */
+    align-items: center;
+    width: 100%;
+    padding-top: 15px;
+  }
+
+  .footer-bottom-left,
+  .footer-bottom-right {
+    text-align: center; /* Center the text on mobile */
+  }
+
+  .footer-icons {
+    margin-top: 10px;
+  }
+
+  .footer-icons img {
+    width: 25px; /* Slightly smaller icons */
+    height: 25px;
+  }
+}

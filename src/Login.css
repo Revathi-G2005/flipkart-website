@@ -1,0 +1,96 @@
+/* Basic Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+  }
+  
+  /* Main Container */
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh); /* Full height of the viewport */
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  
+  .login-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .login-box h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .login-box p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  .login-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .otp-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #2874f0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .otp-btn:hover {
+    background-color: #0658b3;
+  }
+  
+  .terms {
+    font-size: 12px;
+    margin-top: 20px;
+    color: #666;
+  }
+  
+  .terms a {
+    color: #2874f0;
+    text-decoration: none;
+  }
+  
+  .terms a:hover {
+    text-decoration: underline;
+  }
+  
+  .new-account {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .new-account a {
+    color: #2874f0;
+    text-decoration: none;
+  }
+  
+  .new-account a:hover {
+    text-decoration: underline;
+  }
+  
